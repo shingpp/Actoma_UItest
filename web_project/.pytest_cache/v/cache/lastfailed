@@ -1,0 +1,23 @@
+{
+  "test_case/alogin_test.py::TestLogin::test_login16": true,
+  "test_case/chat_test.py::TestChat::test_caht38": true,
+  "test_case/chat_test.py::TestChat::test_chat04": true,
+  "test_case/chat_test.py::TestChat::test_chat38": true,
+  "test_case/chat_test.py::TestChat::test_chat44": true,
+  "test_case/chat_test.py::TestChat::test_chat46": true,
+  "test_case/chat_test.py::TestChat::test_chat47": true,
+  "test_case/chat_test.py::TestChat::test_chat49": true,
+  "test_case/contact_test.py::TestContact::test_contact01": true,
+  "test_case/contact_test.py::TestContact::test_contact02": true,
+  "test_case/contact_test.py::TestContact::test_contact03": true,
+  "test_case/contact_test.py::TestContact::test_contact04": true,
+  "test_case/search_test.py": true,
+  "test_case/search_test.py::TestSearch::test_search01": true,
+  "test_case/search_test.py::TestSearch::test_search02": true,
+  "test_case/search_test.py::TestSearch::test_search03": true,
+  "test_case/search_test.py::TestSearch::test_search04": true,
+  "test_case/search_test.py::TestSearch::test_search05": true,
+  "test_case/search_test.py::TestSearch::test_search06": true,
+  "test_case/set_test.py::TestSet::test_set01": true,
+  "test_case/set_test.py::TestSet::test_set02": true
+}

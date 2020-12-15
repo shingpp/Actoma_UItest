@@ -1,0 +1,15 @@
+{
+  "111/set_test.py": true,
+  "alogin_test.py::TestLogin::test_login16": true,
+  "chat_test.py::MyTest": true,
+  "chat_test.py::TestChat": true,
+  "chat_test.py::TestChat::test_chat04": true,
+  "chat_test.py::TestChat::test_chat38": true,
+  "chat_test.py::TestChat::test_chat39": true,
+  "chat_test.py::TestChat::test_chat44": true,
+  "chat_test.py::TestChat::test_chat45": true,
+  "chat_test.py::TestChat::test_chat48": true,
+  "login_test.py::TestLogin::test_login01": true,
+  "login_test.py::TestLogin::test_login16": true,
+  "search_test.py": true
+}

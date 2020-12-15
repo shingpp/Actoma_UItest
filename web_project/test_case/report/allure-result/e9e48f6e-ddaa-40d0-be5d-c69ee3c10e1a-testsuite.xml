@@ -1,0 +1,413 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1523862525623" stop="1523862525946">
+  <name>project.web_project.test_case.login_test</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1523862525623" status="failed" stop="1523862525706">
+      <description>默认PIN码为空时，确定按钮置灰</description>
+      <name>TestLogin.test_login01</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'driver'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03DB4C70&gt;
+
+    def test_login01(self):
+        '''默认PIN码为空时，确定按钮置灰'''
+&gt;       self.driver.assert_Equal(self.Login.pinOKbutton_attribute(pinOKBtn),"true")
+E       AttributeError: 'TestLogin' object has no attribute 'driver'
+
+login_test.py:52: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525712" status="failed" stop="1523862525722">
+      <description>输入PIN码6-16位后确定按钮高亮</description>
+      <name>TestLogin.test_login02</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E1F9D0&gt;
+
+    def test_login02(self):
+        '''输入PIN码6-16位后确定按钮高亮'''
+&gt;       self.Login.inputpin(self.pin)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:56: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525727" status="failed" stop="1523862525749">
+      <description>输入PIN码大于16位后确定按钮置灰</description>
+      <name>TestLogin.test_login03</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E2D830&gt;
+
+    def test_login03(self):
+        '''输入PIN码大于16位后确定按钮置灰'''
+&gt;       self.Login.inputpin(self.pinNumberOver16)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:62: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525753" status="failed" stop="1523862525760">
+      <description>输入PIN码小于6位后确定按钮置灰</description>
+      <name>TestLogin.test_login04</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E1FEF0&gt;
+
+    def test_login04(self):
+        '''输入PIN码小于6位后确定按钮置灰'''
+&gt;       self.Login.inputpin(pinNumberLess6)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:73: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525765" status="failed" stop="1523862525776">
+      <description>输入PIN码后，点击清除按钮</description>
+      <name>TestLogin.test_login05</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E234B0&gt;
+
+    def test_login05(self):
+        '''输入PIN码后，点击清除按钮'''
+&gt;       self.Login.inputpin(pin)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:79: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525781" status="failed" stop="1523862525790">
+      <description>输入错误PIN码，页面显示提示信息</description>
+      <name>TestLogin.test_login06</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E2DE50&gt;
+
+    def test_login06(self):
+        '''输入错误PIN码，页面显示提示信息'''
+&gt;       self.Login.inputpin(pin)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:87: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525795" status="failed" stop="1523862525802">
+      <description>输入正确PIN码，进入到登录页面</description>
+      <name>TestLogin.test_login07</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03DE2AF0&gt;
+
+    def test_login07(self):
+        '''输入正确PIN码，进入到登录页面'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:97: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525807" status="failed" stop="1523862525818">
+      <description>登录页面，账户输入5位，密码输入6位，登录按钮置灰</description>
+      <name>TestLogin.test_login08</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E23570&gt;
+
+    def test_login08(self):
+        '''登录页面，账户输入5位，密码输入6位，登录按钮置灰'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:104: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525823" status="failed" stop="1523862525834">
+      <description>登录页面，账户输入21位，密码输入6位，登录按钮置灰</description>
+      <name>TestLogin.test_login09</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E515F0&gt;
+
+    def test_login09(self):
+        '''登录页面，账户输入21位，密码输入6位，登录按钮置灰'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:114: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525839" status="failed" stop="1523862525850">
+      <description>登录页面，账户输入6位，密码输入5位，登录按钮置灰</description>
+      <name>TestLogin.test_login10</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E2E3D0&gt;
+
+    def test_login10(self):
+        '''登录页面，账户输入6位，密码输入5位，登录按钮置灰'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:125: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525854" status="failed" stop="1523862525863">
+      <description>登录页面，账户输入6位，密码输入21位(密码最多只能输入20位)</description>
+      <name>TestLogin.test_login11</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E484F0&gt;
+
+    def test_login11(self):
+        '''登录页面，账户输入6位，密码输入21位(密码最多只能输入20位)'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:135: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525868" status="failed" stop="1523862525879">
+      <description>输入密码，点击显示密码，密码框中密码显示明文</description>
+      <name>TestLogin.test_login12</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E54930&gt;
+
+    def test_login12(self):
+        '''输入密码，点击显示密码，密码框中密码显示明文'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:147: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525885" status="failed" stop="1523862525893">
+      <description>输入密码，点击显示密码，密码框中密码显示明文，再次点击，显示密文</description>
+      <name>TestLogin.test_login13</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E29470&gt;
+
+    def test_login13(self):
+        '''输入密码，点击显示密码，密码框中密码显示明文，再次点击，显示密文'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:157: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525897" status="failed" stop="1523862525906">
+      <description>输入正确账户，错误密码，点击登录，页面有提示信息</description>
+      <name>TestLogin.test_login14</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E42830&gt;
+
+    def test_login14(self):
+        '''输入正确账户，错误密码，点击登录，页面有提示信息'''
+&gt;       self.Login.login(account,password)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:169: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525910" status="failed" stop="1523862525921">
+      <description>输入错误账户，错误密码，点击登录，页面有提示信息</description>
+      <name>TestLogin.test_login15</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E51630&gt;
+
+    def test_login15(self):
+        '''输入错误账户，错误密码，点击登录，页面有提示信息'''
+&gt;       self.Login.login(accountErr)
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:175: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525926" status="failed" stop="1523862525934">
+      <name>TestLogin.test_login16</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E2ED10&gt;
+
+    def test_login16(self):
+        # 输入正确账户密码，点击登录登录成功,通过主页面的添加“+”按钮进行断言
+&gt;       self.Login.login()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:181: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1523862525939" status="failed" stop="1523862525946">
+      <description>更多-重置密码（通过三个好友手机号）</description>
+      <name>TestLogin.test_login17</name>
+      <failure>
+        <message>AttributeError: 'TestLogin' object has no attribute 'Login'</message>
+        <stack-trace>self = &lt;project.web_project.test_case.login_test.TestLogin object at 0x03E48B30&gt;
+
+    def test_login17(self):
+        '''更多-重置密码（通过三个好友手机号）'''
+&gt;       self.Login.pin()
+E       AttributeError: 'TestLogin' object has no attribute 'Login'
+
+login_test.py:188: AttributeError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="8972-MainThread"/>
+        <label name="host" value="xuxiaojing-PC"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>

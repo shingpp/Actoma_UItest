@@ -1,0 +1,5 @@
+web_project/report/*
+.idea
+web_project/screenshot
+.AT_Server_APITest
+.atuitest
